@@ -10,3 +10,4 @@
 # v = 2 / 2 / 2
 # print(int(m * n * v))
 
+# 10 task:
