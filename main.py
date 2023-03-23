@@ -1,1 +1,1 @@
-import yandex
+import python_practice1
