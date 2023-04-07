@@ -54,3 +54,53 @@
 # mm = (m + t) % 60
 # print(hh // 10, hh % 10, ":", mm // 10, mm % 10, sep="")
 
+# 16
+# A = int(input())
+# B = int(input())
+# C = int(input())
+# time = (B - A) / C
+# print(f"{time:.2f}")
+
+# all_sum = int(input())
+# last_sum = int(input(), 2)
+# print(all_sum + last_sum)
+
+# price = int(input(), 2)
+# cash = int(input())
+# print(int(cash - price))
+
+
+# name = input()
+# price = int(input())
+# weight = int(input())
+# money = int(input())
+# # print((35 - len("Чек")) / 2)
+# print("=" * 16 + "Чек" + "=" * 16)
+# cost = weight * price
+# change = money - cost
+# a = len(f"Товар:{name}")
+# print(a)
+# b = len(f"Цена:{weight}кг * {price}руб/кг")
+# c = len(f"Итого:{cost}руб")
+# d = len(f"Внесено:{money}руб")
+# e = len(f"Сдача:{change}руб")
+# print("Товар:" + (" " * (35 - a)) + f"{name}")
+# print("Цена:" + (" " * (35 - b)) + f"{weight}кг * {price}руб/кг")
+# print("Итого:" + (" " * (35 - c)) + f"{cost}руб")
+# print("Внесено:" + (" " * (35 - d)) + f"{money}руб")
+# print("Сдача:" + (" " * (35 - e)) + f"{change}руб")
+# print("=" * 35)
+
+# N = int(input())
+# M = int(input())
+# K1 = int(input())
+# K2 = int(input())
+# # K2 < K1
+# # M2, M1 - вес котлет - ?
+# # M2 = N - M1
+# # M1 * K1 + M2 * K2 = N * M
+# # M1 * K1 + (N - M1) * K2 = N * M
+# # M1 * (K1 - K2) + N * K2 = N * M
+# M1 = (N * M - N * K2) / (K1 - K2)
+# M2 = N - M1
+# print(int(M1), int(M2))

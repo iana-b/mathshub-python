@@ -34,6 +34,13 @@
 # proizvedenie = int(number[0]) * int(number[1]) * int(number[2])
 # print(f"сумма = {summa}\nпроизведение = {proizvedenie}")
 
+# второй способ:
+# number = int(input())
+# n1 = number // 100
+# n2 = number % 10
+# n3 = number // 10 % 10
+# print(f"сумма = {n1 + n2 + n3}\nпроизведение = {n1 * n2 * n3}")
+
 # Блок 2
 
 # Задача 0 - Минимум из 2 чисел
@@ -74,6 +81,18 @@
 #     else:
 #         print(f"Сдача = {change}")
 
+# второй способ:
+# price = float(input())
+# money = float(input())
+#
+# result = money - price
+# if result < 0:
+#     print("Недостаточно средств")
+# elif int(result) != result:
+#     print(f"Сдача = {result} + 1")
+# else:
+#     print(f"Сдача = {result}")
+
 # Задача 4 - Високосный год
 # year = int(input())
 # if year % 400 == 0:
@@ -86,6 +105,12 @@
 #             print("високосный")
 #         else:
 #             print("невисокосный")
+# второй способ:
+# year = int(input())
+# if (year % 400 == 0) or ((year % 100 != 0) & (year % 4 == 0)):
+#     print("високосный")
+# else:
+#     print("невисокосный")
 
 # Задача 6 - Округление
 # candies = int(input())
@@ -94,6 +119,16 @@
 #     print(f"{each} " * 3)
 # else:
 #     print(each, each, candies - 2 * each)
+
+# второй способ записи:
+# total = int(input())
+# if total % 3 != 0:
+#     first = round(total / 3)
+#     second = round(total / 3)
+#     third = total - first - second
+# else:
+#     first = second = third = int(total / 3)
+# print(first, second, third)
 
 # Задача 7 - Минимальное из трех
 # a = int(input())
@@ -126,6 +161,20 @@
 # mid_abc = a + b + c - min_abc - max_abc
 # print(min_abc, mid_abc, max_abc)
 
+# второй способ:
+# min1 = float(input())
+# min2 = float(input())
+# min3 = float(input())
+#
+# if min1 > min2:
+#     min1, min2 = min2, min1
+# if min2 > min3:
+#     min2, min3 = min3, min2
+# if min1 > min2:
+#     min1, min2 = min2, min1
+#
+# print(min1, min2, min3)
+
 # Задача Дополнительная
 # a = int(input())
 # b = int(input())
@@ -156,3 +205,15 @@
 #         print("Вы ввели символ")
 # else:
 #     print("Ошибка")
+
+# второй способ
+# предположим, что посторонние символы - все, что находятся за пределами букв русского и английского алфавитов
+# char = input()
+# if len(char) != 1:
+#     print("некорректное кол-во символов")
+# else:
+#     char_num = ord(char)
+#     if ((char_num >= ord("а")) and (char_num <= ord("я"))) | ((char_num >= ord("a")) and (char_num <= ord("z"))):
+#         print(f"следующая буква {chr(char_num + 1)}")       # символ |, а не or
+#     else:
+#         print("введен неверный символ")
