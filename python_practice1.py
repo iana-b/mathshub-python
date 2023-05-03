@@ -89,7 +89,7 @@
 # if result < 0:
 #     print("Недостаточно средств")
 # elif int(result) != result:
-#     print(f"Сдача = {result} + 1")
+#     print(f"Сдача = {int(result) + 1}")
 # else:
 #     print(f"Сдача = {result}")
 
@@ -107,7 +107,7 @@
 #             print("невисокосный")
 # второй способ:
 # year = int(input())
-# if (year % 400 == 0) or ((year % 100 != 0) & (year % 4 == 0)):
+# if (year % 400 == 0) or ((year % 100 != 0) and (year % 4 == 0)):
 #     print("високосный")
 # else:
 #     print("невисокосный")
@@ -178,7 +178,7 @@
 # Задача Дополнительная
 # a = int(input())
 # b = int(input())
-# # print(b and a / b)
+# print(b and a / b)
 
 # Блок 3
 

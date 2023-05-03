@@ -158,10 +158,10 @@
 # print(len(a))
 
 # Задача 1 - Уникальные элементы
-# n = input().split()
+# n = input('Введите список чисел через пробел: ').split()
 # n_set = set(n)
-# print(n_set)
-# print(len(n_set))
+# # print(n_set)
+# print(f'Количество уникальных элементов = {len(n_set)}')
 
 # Задача 2 - Площадь
 # coords = [(100, 20), (20, 20)]
@@ -339,4 +339,59 @@
 # print(res)
 
 # 2. сгенерируйте список из 10 случайных значений от -10 до 10
-import random
+# import random
+# res = [random.randint(-10, 10) for i in range(10)]
+# print(res)
+
+# 3. сгенерируйте список из квадратных корней всех чисел от 16 до 25 включительно.
+# Округлите все значения до двух знаков после запятой
+# res = [round(i ** (1/2), 2) for i in range(16, 26)]
+# print(res)
+
+# 4. сгенерируйте список из четных чисел от 40 до 60 включительно без использования if
+# res = [i for i in range(40, 61, 2)]
+# print(res)
+
+# 5. в предыдущем генераторе добавьте условие: если число делится на 6 - его не включать в список значений
+# res = [i for i in range(40, 61, 2) if (i % 6 != 0)]
+# print(res)
+
+# 6. сгенерируйте список из четных чисел от 40 до 60 включительно.
+# Если какое то из четных чисел делится на 6 - вместо него поставьте символ 'Y'
+# res = [i if i % 6 != 0 else 'Y' for i in range(40, 61, 2)]
+# print(res)
+
+# 7. сгенерируйте словарь, в котором ключи это значения из списка list1,
+# а значения - это количество символов в названии ключа
+# list1 = ['yellow', 'green', 'blue', 'red', 'pink', 'deep-blue', 'white']
+# res = {i: len(i) for i in list1}
+# print(res)
+
+# 8. сгенерируйте словарь, в котором ключи это значения из списка, полученного в пункте 1, а значения из пункта 3
+# keys = ['user' + str(i) for i in range(1, 16)]
+# values = [round(i ** (1/2), 2) for i in range(16, 26)]
+# res = {key: value for key, value in zip(keys, values)}
+# print(res)
+
+# 9. дополните предыдущий пункт условием так, чтобы оставить только тех пользователей,
+# у которых в значении не целое число
+# keys = ['user' + str(i) for i in range(1, 16)]
+# values = [round(i ** (1/2), 2) for i in range(16, 26)]
+# res = {key: value for key, value in zip(keys, values) if value != round(value)}
+# print(res)
+
+# 10. дополни пункт 8 так, чтобы для всех пользователей из сгенерированных в пункте 1 создалась пара в итоговом словаре
+# import itertools
+# keys = ['user' + str(i) for i in range(1, 16)]
+# values = [round(i ** (1/2), 2) for i in range(16, 26)]
+# res = {key: value for key, value in itertools.zip_longest(keys, values)}
+# print(res)
+
+# 11. пользователь на экран в строку пишет значения для словаря в формате: коля:9 леша:10 ира:12 (Дополнительная!!!)
+# распарсите эти значения в словарь с помощью одной строчки кода
+# s = input()
+# res = {key.split(':')[0]: value.split(':')[1] for key, value in zip(s.split(), s.split())}
+# print(res)
+
+# print({i.split(':')[0]: i.split(':')[1] for i in input().split()})
+

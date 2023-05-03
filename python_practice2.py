@@ -96,8 +96,8 @@
 #     print(answer)
 
 # # Задача 5 - Угадать число
-# n = int(input())
 # import random
+# n = int(input())
 # count = 0
 # min_a = 0
 # max_a = 100
@@ -105,20 +105,18 @@
 #     count += 1
 #     a = random.randint(min_a, max_a)
 #     print(f"попытка {count}, ваше число {a}?")
-#     if n > a:
-#         print("больше")
+#     answer = input()
+#     if answer == 'больше':
 #         min_a = a
-#     elif n < a:
-#         print("меньше")
+#     elif answer == 'меньше':
 #         max_a = a
 #     else:
-#         print("угадано\nура!")
+#         print("ура!")
 #         break
 
 # Задача 6 - Модификация угадайки
 # import random
 # n = int(input())
-# a = 0
 # count = 0
 # min_a = 0
 # max_a = 100
@@ -126,17 +124,16 @@
 #     count += 1
 #     a = random.randint(min_a, max_a)
 #     print(f"попытка {count}, ваше число {a}?")
-#     if n > a:
-#         print("больше")
+#     answer = input()
+#     if answer == 'больше':
 #         min_a = a
-#     elif n < a:
-#         print("меньше")
+#     elif answer == 'меньше':
 #         max_a = a
 #     else:
-#         print("угадано\nура!")
+#         print("ура!")
 #         break
 # if n != a:
-#     print("Число не удалось угадать!")
+#   print("Число не удалось угадать!")
 
 # Задача 7 - Тестирование (повышенной сложности)
 # import random
