@@ -1,1 +1,1 @@
-import python_practiceNUMPY
+import LifeGame
