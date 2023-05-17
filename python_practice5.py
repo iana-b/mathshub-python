@@ -211,51 +211,60 @@
 # print(pow_number(test_x, test_n))
 
 # Задача 5
-class Contact:
-    def __init__(self, name: str, phone_number: str, email: str):
-        self.name = name
-        self.phone_number = phone_number
-        self.email = email
+# class Contact:
+#     def __init__(self, name: str, phone_number: str, email: str):
+#         self.name = name
+#         self.phone_number = phone_number
+#         self.email = email
+#
+#     def __str__(self) -> str:
+#         return f'Name: {self.name}, Phone: {self.phone_number}, Email: {self.email}'
+#
+#
+# class PhoneBook:
+#     def __init__(self):
+#         self.contacts = {}
+#
+#     def add_contact(self, name: str, phone_number: str, email: str) -> None:
+#         self.contacts[name] = Contact(name, phone_number, email)
+#         print(f"Added {name} to the phone book")
+#
+#     def remove_contact(self, name: str) -> None:
+#         if name in self.contacts:
+#             self.contacts.pop(name)
+#         print(f"Deleted {name} from the phone book")
+#
+#     def find_contact(self, name: str):
+#         print(self.contacts.get(name, f'Name {name} doesn\'t exist'))
+#
+#     def show_all_contacts(self):
+#         print('Show all contacts')
+#         for value in self.contacts.values():
+#             print(value)
+#
+#     def show_sorted_contacts(self):
+#         print('Show sorted contacts')
+#         names = sorted(list(self.contacts.keys()))
+#         for n in names:
+#             print(self.contacts.get(n))
+#
+#
+# phone_book = PhoneBook()
+# phone_book.add_contact('Vasya', '+77-88', 'vas@gmail.com')
+# phone_book.add_contact('Sasha', '+55', 'sasha@gmail.com')
+# phone_book.add_contact('Olya', '+848', 'olyalya@gmail.com')
+# phone_book.add_contact('Sveta', '+561-55', 'sssss@gmail.com')
+# phone_book.find_contact('Vasya')
+# phone_book.find_contact('Vanya')
+# phone_book.show_all_contacts()
+# phone_book.show_sorted_contacts()
 
-    def __str__(self) -> str:
-        return f'Name: {self.name}, Phone: {self.phone_number}, Email: {self.email}'
+# Python program to demonstrate
+# the difference between and, &
+# operator
 
-
-class PhoneBook:
-    def __init__(self):
-        self.contacts = {}
-
-    def add_contact(self, name: str, phone_number: str, email: str) -> None:
-        self.contacts[name] = Contact(name, phone_number, email)
-        print(f"Added {name} to the phone book")
-
-    def remove_contact(self, name: str) -> None:
-        if name in self.contacts:
-            self.contacts.pop(name)
-        print(f"Deleted {name} from the phone book")
-
-    def find_contact(self, name: str):
-        print(self.contacts.get(name, f'Name {name} doesn\'t exist'))
-
-    def show_all_contacts(self):
-        print('Show all contacts')
-        for value in self.contacts.values():
-            print(value)
-
-    def show_sorted_contacts(self):
-        print('Show sorted contacts')
-        names = sorted(list(self.contacts.keys()))
-        for n in names:
-            print(self.contacts.get(n))
-
-
-phone_book = PhoneBook()
-phone_book.add_contact('Vasya', '+77-88', 'vas@gmail.com')
-phone_book.add_contact('Sasha', '+55', 'sasha@gmail.com')
-phone_book.add_contact('Olya', '+848', 'olyalya@gmail.com')
-phone_book.add_contact('Sveta', '+561-55', 'sssss@gmail.com')
-phone_book.find_contact('Vasya')
-phone_book.find_contact('Vanya')
-phone_book.show_all_contacts()
-phone_book.show_sorted_contacts()
-
+# a = True
+# b = False
+#
+# print(b and a) # print_stat1
+# print(b & a) # print_stat2

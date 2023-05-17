@@ -1,1 +1,1 @@
-import python_practice5
+import python_practiceNUMPY

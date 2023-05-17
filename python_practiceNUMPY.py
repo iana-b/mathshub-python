@@ -20,6 +20,11 @@ import numpy as np
 # a[a % 2 != 0] = -1
 # print(a)
 
+# arr = np.array([[1, 3, 5], [1, 2, 3]])
+# print(arr)
+# arr[(arr > 0) & (arr % 2 != 0)] = -1
+# print(arr)
+
 # 3
 # a = np.array([[1, 3, 5], [1, 2, 3]])
 # b = np.array([[1, 3, 7], [9, 2, 9]])
@@ -28,6 +33,7 @@ import numpy as np
 
 # 4
 # a = np.array([[1, 2, 5], [1, 2, 1], [1, 2, 2]])
+# print(a)
 # a[:, [0, 1]] = a[:, [1, 0]]
 # print(a)
 
@@ -36,6 +42,28 @@ import numpy as np
 # a[a < 0] = 0
 # a[a > 255] = 255
 # print(a)
+#
+# a = np.array([-1, -5, 2, 5, 10, 256, 280, -5])
+# print(a)
+# print(a.clip(0, 255))
+
+# 6
+# arr = np.random.randint(-100, 100, (3, 3))
+# print(arr)
+# print(arr.ravel())
+
+# 7
+# arr = np.random.randint(-100, 100, (2, 3))
+# print(arr)
+# print(arr.max(axis = 1))
+
+# 8
+# arr = np.array([1, 2, 3, np.nan, 4, 5, np.nan, 6, 7, np.nan, 8 ])
+# print(arr)
+# print(arr[~ np.isnan(arr)])
+
+# 9
+
 
 # import numpy as np
 # import pandas as pd
@@ -67,6 +95,12 @@ import numpy as np
 # # 4-5
 # data.query('fnlwgt < 50000')
 
+
+# print(f'Больше: {round(data[data["salary"]==">50K"]["age"].mean(),0)} +- {round(data[data["salary"]==">50K"]["age"].std(),1)}')
+# print(f'Меньше: {round(data[data["salary"]=="<=50K"]["age"].mean(),0)} +- {round(data[data["salary"]=="<=50K"]["age"].std(),1)}')
+
+
+
 # a = np.linspace(0, 8, 7)
 # print(a)
 
@@ -97,5 +131,5 @@ import numpy as np
 # mixed_array[0] = 'Hello world, this is a test'
 # print(mixed_array)
 
-a = np.array([1, 2, 3, 5.])
-print(a)
+# a = np.array([1, 2, 3, 5.])
+# print(a)
